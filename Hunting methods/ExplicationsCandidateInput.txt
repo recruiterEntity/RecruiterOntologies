@@ -1,0 +1,8 @@
+In the CandidateInput.xml :
+
+CandidateInput represents a candidate applying for a job.
+The candidate possesses skills in SQL, Database Management, and Oracle Database.
+The candidate has 6 years of experience.
+The candidate is applying for a Database Administrator position.
+The candidate is located in a remote location.
+You can use this RDF structure as input when matching against the recruiter and Talend Mapping ontologies to recommend a suitable hunting method for the given job requirements.
