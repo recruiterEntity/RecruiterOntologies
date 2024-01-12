@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Entities
+<#DataScientist> rdf:type <#JobPosition> .
+
+<#Python> rdf:type <#Skill> .
+<#MachineLearning> rdf:type <#Skill> .
+
+# Relationships
+<#JohnDoe> rdf:type <#Person> .
+<#JohnDoe> <#possessesSkill> <#Python>, <#MachineLearning> .
+
+# Experience Attribute
+<#JohnDoe> <#experienceYears> 3 .
+
+# Location Attribute
+<#JohnDoe> <#appliesFor> <#DataScientist> .
+
+<#Location> rdf:type <#Location> .
+<#TechCity> rdf:type <#Location> .
