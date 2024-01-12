@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+]>
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Classes -->
+  <rdf:Description rdf:about="#BooleanSearchTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#Keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#Skill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <!-- Object Properties -->
+  <rdf:Description rdf:about="#combines">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#BooleanSearchTechnique"/>
+    <rdf:range rdf:resource="#Keyword"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#includes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#BooleanSearchTechnique"/>
+    <rdf:range rdf:resource="#Skill"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#refinesSearchFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#BooleanSearchTechnique"/>
+    <rdf:range rdf:resource="#Location"/>
+  </rdf:Description>
+
+  <!-- Individuals -->
+  <rdf:Description rdf:about="#EffectiveSearch">
+    <rdf:type rdf:resource="#BooleanSearchTechnique"/>
+    <combines rdf:resource="#Programming"/>
+    <includes rdf:resource="#CommunicationSkills"/>
+    <refinesSearchFor rdf:resource="#TechHub"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#Programming">
+    <rdf:type rdf:resource="#Keyword"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#CommunicationSkills">
+    <rdf:type rdf:resource="#Skill"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#TechHub">
+    <rdf:type rdf:resource="#Location"/>
+  </rdf:Description>
+
+</rdf:RDF>
