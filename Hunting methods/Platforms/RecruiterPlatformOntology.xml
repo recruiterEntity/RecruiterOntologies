@@ -1,0 +1,35 @@
+<!-- Recruitment Platforms -->
+<rdf:Description rdf:about="#RecruitmentPlatforms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#JobBoard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#makesUseOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#RecruitmentPlatforms"/>
+    <rdf:range rdf:resource="#JobBoard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#optimizesWithKeywords">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#RecruitmentPlatforms"/>
+    <rdf:range rdf:resource="#KeywordOptimization"/>
+</rdf:Description>
+
+<!-- Individuals -->
+<rdf:Description rdf:about="#LinkedIn">
+    <rdf:type rdf:resource="#JobBoard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#OptimizedRecruitment">
+    <rdf:type rdf:resource="#RecruitmentPlatforms"/>
+    <optimizesWithKeywords rdf:resource="#KeywordOptimization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#KeywordOptimization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
