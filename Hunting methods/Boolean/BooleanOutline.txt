@@ -1,4 +1,4 @@
-Certainly! Here's a basic outline for a "Boolean Search Techniques Ontology" based on mastering Boolean operators for refining online searches:
+Here's a basic outline for a "Boolean Search Techniques Ontology" based on mastering Boolean operators for refining online searches:
 
 1. **Entities:**
    - Query
