@@ -1,0 +1,34 @@
+<!-- Industry-Specific Platforms -->
+<rdf:Description rdf:about="#IndustrySpecificPlatforms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#JobBoard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#explores">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#IndustrySpecificPlatforms"/>
+    <rdf:range rdf:resource="#JobBoard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#tailorsApproach">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#IndustrySpecificPlatforms"/>
+    <rdf:range rdf:resource="#TargetTalentPool"/>
+</rdf:Description>
+
+<!-- Individuals -->
+<rdf:Description rdf:about="#TechJobBoard">
+    <rdf:type rdf:resource="#JobBoard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#HealthcareJobBoard">
+    <rdf:type rdf:resource="#JobBoard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#TargetTalentPool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
