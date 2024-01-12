@@ -1,0 +1,24 @@
+<!-- Networking -->
+<rdf:Description rdf:about="#Networking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#attends">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#Networking"/>
+    <rdf:range rdf:resource="#Event"/>
+</rdf:Description>
+
+<!-- Individuals -->
+<rdf:Description rdf:about="#IndustryEvent">
+    <rdf:type rdf:resource="#Event"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#Meetup">
+    <rdf:type rdf:resource="#Event"/>
+</rdf:Description>
