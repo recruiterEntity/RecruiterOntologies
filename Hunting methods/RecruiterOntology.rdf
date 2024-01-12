@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Classes
+# Job Position
+:JobPosition rdf:type owl:Class .
+
+# Skill
+:Skill rdf:type owl:Class .
+
+# Language
+:Language rdf:type owl:Class .
+
+# Experience Level
+:ExperienceLevel rdf:type owl:Class .
+
+# Organization
+:Organization rdf:type owl:Class .
+
+# Person
+:Person rdf:type owl:Class .
+
+# Location
+:Location rdf:type owl:Class .
+
+# Properties
+:possessesSkill rdf:type rdf:Property .
+:speaksLanguage rdf:type rdf:Property .
+:hasExperienceLevel rdf:type rdf:Property .
+:hasWorkedAt rdf:type rdf:Property .
+:appliesFor rdf:type rdf:Property .
+:experienceYears rdf:type rdf:Property .
+:hasLinkedInProfile rdf:type rdf:Property .
+:hasGitHubProfile rdf:type rdf:Property .
+:worksFor rdf:type rdf:Property .
+:recruitsCandidate rdf:type rdf:Property .
+:locatedIn rdf:type rdf:Property .
+
+# Individuals
+# Job Position
+:SoftwareEngineer rdf:type owl:NamedIndividual, :JobPosition .
+
+# Skills
+:JavaProgramming rdf:type owl:NamedIndividual, :Skill .
+:CommunicationSkills rdf:type owl:NamedIndividual, :Skill .
+
+# Language
+:English rdf:type owl:NamedIndividual, :Language .
+
+# Experience Level
+:MidLevel rdf:type owl:NamedIndividual, :ExperienceLevel .
+
+# Organization
+:TechCorp rdf:type owl:NamedIndividual, :Organization .
+
+# Person
+:JohnDoe rdf:type owl:NamedIndividual, :Person ;
+    :possessesSkill :JavaProgramming,
+                   :CommunicationSkills ;
+    :speaksLanguage :English ;
+    :hasExperienceLevel :MidLevel ;
+    :hasWorkedAt :TechCorp ;
+    :experienceYears 4 ;
+    :appliesFor :SoftwareEngineer ;
+    :hasLinkedInProfile <http://www.linkedin.com/in/johndoe> ;
+    :hasGitHubProfile <http://www.github.com/johndoe> .
+
+# Location
+:TechHub rdf:type owl:NamedIndividual, :Location .
+
+# Recruiter
+:Recruiter1 rdf:type owl:NamedIndividual, :Person ;
+    :worksFor :TechRecruiters ;
+    :recruitsCandidate :JohnDoe .
+
+# Recruitment Agency
+:TechRecruiters rdf:type owl:NamedIndividual, :Organization ;
+    :locatedIn :CityXYZ .
+
+# City
+:CityXYZ rdf:type owl:NamedIndividual, :Location .
+
+# Relationships
+:JohnDoe :possessesSkill :JavaProgramming, :CommunicationSkills ;
+         :speaksLanguage :English ;
+         :hasExperienceLevel :MidLevel ;
+         :hasWorkedAt :TechCorp ;
+         :appliesFor :SoftwareEngineer ;
+         :hasLinkedInProfile <http://www.linkedin.com/in/johndoe> ;
+         :hasGitHubProfile <http://www.github.com/johndoe> .
+
+:Recruiter1 :worksFor :TechRecruiters ;
+            :recruitsCandidate :JohnDoe .
+
+:TechRecruiters :locatedIn :CityXYZ .
