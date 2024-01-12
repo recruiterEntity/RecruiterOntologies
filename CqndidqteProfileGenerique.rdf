@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+# Define the ontology
+<http://example.org/candidate_profile_ontology> rdf:type owl:Ontology.
+
+# Define classes
+:Person rdf:type owl:Class.
+:Skill rdf:type owl:Class.
+:Experience rdf:type owl:Class.
+:JobPosition rdf:type owl:Class.
+:Location rdf:type owl:Class.
+
+# Define individuals
+:Candidate rdf:type owl:NamedIndividual, :Person.
+:Java rdf:type owl:NamedIndividual, :Skill.
+:SpringFramework rdf:type owl:NamedIndividual, :Skill.
+:Experience rdf:type owl:NamedIndividual, :Experience.
+:SoftwareEngineer rdf:type owl:NamedIndividual, :JobPosition.
+:TechHub rdf:type owl:NamedIndividual, :Location.
+
+# Define object properties
+:possessesSkill rdf:type owl:ObjectProperty.
+:hasExperience rdf:type owl:ObjectProperty.
+:appliesFor rdf:type owl:ObjectProperty.
+:locatedIn rdf:type owl:ObjectProperty.
+
+# Connect individuals with properties
+:Candidate :possessesSkill :Java, :SpringFramework.
+:Candidate :hasExperience :Experience.
+:Candidate :appliesFor :SoftwareEngineer.
+:Candidate :locatedIn :TechHub.
+
+# Define datatype properties for specific details
+:Experience rdf:type owl:DatatypeProperty.
+:Experience rdf:range xsd:integer.
+:Experience rdf:domain :Person.
