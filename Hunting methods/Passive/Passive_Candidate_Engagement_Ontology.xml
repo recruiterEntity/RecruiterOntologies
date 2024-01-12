@@ -1,0 +1,33 @@
+
+<!-- Passive Candidate Engagement -->
+<rdf:Description rdf:about="#PassiveCandidateEngagement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#EngagementStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#engagesWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#PassiveCandidateEngagement"/>
+    <rdf:range rdf:resource="#EngagementStrategy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#highlightsOpportunity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#EngagementStrategy"/>
+    <rdf:range rdf:resource="#CompanyOpportunity"/>
+</rdf:Description>
+
+<!-- Individuals -->
+<rdf:Description rdf:about="#NetworkingEngagement">
+    <rdf:type rdf:resource="#EngagementStrategy"/>
+    <highlightsOpportunity rdf:resource="#NetworkingOpportunity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#NetworkingOpportunity">
+    <rdf:type rdf:resource="#CompanyOpportunity"/>
+    <OpportunityDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network at industry events and conferences.</OpportunityDetails>
+</rdf:Description>
