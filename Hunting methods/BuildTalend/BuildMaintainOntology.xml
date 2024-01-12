@@ -1,0 +1,21 @@
+<!-- Talent Pools -->
+<rdf:Description rdf:about="#TalentPools">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#PotentialCandidate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#createsDatabase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#TalentPools"/>
+    <rdf:range rdf:resource="#PotentialCandidate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#updatesAndCategorizes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#TalentPools"/>
+    <rdf:range rdf:resource="#PotentialCandidate"/>
+</rdf:Description>
