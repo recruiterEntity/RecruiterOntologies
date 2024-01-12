@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Candidate Information -->
+  <rdf:Description rdf:about="#CandidateInput">
+    <rdf:type rdf:resource="#Candidate"/>
+    <possessesSkill rdf:resource="#SQL"/>
+    <possessesSkill rdf:resource="#DatabaseManagement"/>
+    <possessesSkill rdf:resource="#OracleDatabase"/>
+    <experienceYears rdf:datatype="&xsd;integer">6</experienceYears>
+    <appliesFor rdf:resource="#DatabaseAdministrator"/>
+    <locatedIn rdf:resource="#RemoteLocation"/>
+  </rdf:Description>
+
+  <!-- Skills -->
+  <rdf:Description rdf:about="#SQL">
+    <rdf:type rdf:resource="#Skill"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#DatabaseManagement">
+    <rdf:type rdf:resource="#Skill"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#OracleDatabase">
+    <rdf:type rdf:resource="#Skill"/>
+  </rdf:Description>
+
+  <!-- Experience -->
+  <rdf:Description rdf:about="#Experience">
+    <rdf:type rdf:resource="#Experience"/>
+    <requiredYears rdf:datatype="&xsd;integer">5</requiredYears>
+  </rdf:Description>
+
+  <!-- Location -->
+  <rdf:Description rdf:about="#RemoteLocation">
+    <rdf:type rdf:resource="#Location"/>
+  </rdf:Description>
+
+</rdf:RDF>
