@@ -1,0 +1,21 @@
+<!-- Employee Referrals -->
+<rdf:Description rdf:about="#EmployeeReferrals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#ReferralProgram">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#encouragesReferrals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#EmployeeReferrals"/>
+    <rdf:range rdf:resource="#ReferralProgram"/>
+</rdf:Description>
+
+<!-- Individuals -->
+<rdf:Description rdf:about="#ReferralIncentive">
+    <rdf:type rdf:resource="#ReferralProgram"/>
+    <IncentiveDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provide incentives for successful referrals.</IncentiveDetails>
+</rdf:Description>
