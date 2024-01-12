@@ -1,0 +1,48 @@
+Here's a basic outline for an "Employee Referrals Ontology":
+
+1. **Entities:**
+   - Employee
+   - Candidate
+   - Job Position
+   - ReferralProgram
+
+2. **Relationships:**
+   - RefersCandidate
+   - ParticipatesInReferralProgram
+   - AppliesFor
+
+3. **Attributes:**
+   - EmployeeName
+   - EmployeeID
+   - CandidateName
+   - CandidateID
+   - JobTitle
+   - ReferralProgramName
+   - ReferralBonus
+
+4. **Referral Program Management:**
+   - Track and manage referral programs.
+   - Monitor the effectiveness of referral programs.
+   - Capture details of referral bonuses.
+
+5. **Communication and Notifications:**
+   - Facilitate communication between employees and candidates.
+   - Notify employees about the status of their referrals.
+   - Automate communication for successful referrals.
+
+6. **Rewards and Recognition:**
+   - Recognize employees for successful referrals.
+   - Track and display employee achievements in the referral program.
+   - Provide rewards and incentives for referrals.
+
+7. **Performance Metrics:**
+   - Measure the success of referral programs.
+   - Analyze the impact of employee referrals on recruitment.
+   - Evaluate the performance of individual employees in the referral program.
+
+8. **Candidate Tracking:**
+   - Monitor the progress of referred candidates in the recruitment process.
+   - Capture data on the performance and fit of referred candidates.
+   - Integrate with the general talent acquisition process.
+
+Remember, this is a basic structure, and you can expand and customize the ontology based on the specific needs and nuances of your employee referral program. If you have specific attributes, relationships, or elements you'd like to include or modify, feel free to adapt the ontology accordingly.
