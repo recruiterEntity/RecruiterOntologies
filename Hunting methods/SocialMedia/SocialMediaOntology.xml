@@ -1,0 +1,30 @@
+<!-- Social Media Presence -->
+<rdf:Description rdf:about="#SocialMediaPresence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#ProfessionalPlatform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#maintainsPresence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#SocialMediaPresence"/>
+    <rdf:range rdf:resource="#ProfessionalPlatform"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#sharesContent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#SocialMediaPresence"/>
+    <rdf:range rdf:resource="#CompanyContent"/>
+</rdf:Description>
+
+<!-- Individuals -->
+<rdf:Description rdf:about="#LinkedIn">
+    <rdf:type rdf:resource="#ProfessionalPlatform"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#CompanyContent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
