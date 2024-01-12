@@ -1,0 +1,25 @@
+<!-- AI and Automation -->
+<rdf:Description rdf:about="#AIandAutomation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#AIDrivenTool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#AutomatedTask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<!-- Object Properties -->
+<rdf:Description rdf:about="#employs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#AIandAutomation"/>
+    <rdf:range rdf:resource="#AIDrivenTool"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#automates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:domain rdf:resource="#AIandAutomation"/>
+    <rdf:range rdf:resource="#AutomatedTask"/>
+</rdf:Description>
